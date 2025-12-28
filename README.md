@@ -18,29 +18,8 @@ Questo progetto fornisce un semplice generatore di password casuali utilizzando 
 2. Apri il file `index.html` in un browser.
 3. Clicca sul pulsante "Generate" per generare una nuova password casuale.
 
-## Codice sorgente
-```html
-<div class="pass-gen" id="pass-gen">
-    <a href="#" class="button" id="refresh">Generate</a>
-    <span class="container" id="Container"></span>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    function randomStrings(length) {
-        var strResult = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_-+=`~,.[]:|";
-        return Array.from({ length }, () => strResult[Math.floor(Math.random() * strResult.length)]).join('');
-    }
-
-    $("#refresh").click(function() {
-        $("#Container").html(randomStrings(12));      
-        $(".container").show();
-        return false;
-    });
-  });
-</script>
-```
+## Demo
+Puoi provare la app da qui https://smal82.github.io/Password-Generate/
 
 ## Contributi
 Sentiti libero di proporre miglioramenti aprendo una pull request o segnalando problemi tramite issue.
